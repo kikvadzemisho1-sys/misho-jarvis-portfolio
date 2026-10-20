@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="ka">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="theme-color"
+      content="#07111b"
+    />
+    <meta
+      name="description"
+      content="The personal portfolio of Misho Kikvadze — front-end developer and UI/UX craftsman."
+    />
+    <title>Misho Kikvadze | JARVIS Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="ambient-grid" aria-hidden="true"></div>
+
+    <section id="intro-screen" class="intro-screen" aria-labelledby="intro-status">
+      <div class="arc-reactor" aria-hidden="true">
+        <span class="reactor-ring reactor-ring--outer"></span>
+        <span class="reactor-ring reactor-ring--middle"></span>
+        <span class="reactor-ring reactor-ring--inner"></span>
+        <span class="reactor-core"></span>
+      </div>
+      <p class="eyebrow">PERSONAL ASSISTANT // MK-01</p>
+      <h1 id="intro-status" class="intro-title">SYSTEM OFFLINE</h1>
+      <p class="intro-copy">დააჭირეთ ღილაკს სისტემის გასააქტიურებლად</p>
+      <label class="voice-control" for="voice-language">
+        <span>VOICE OUTPUT</span>
+        <select id="voice-language" name="voice-language">
+          <option value="ka-GE" selected>GEORGIAN // KA-GE</option>
+          <option value="en-US">ENGLISH // EN-US</option>
+        </select>
+      </label>
+      <button id="activate-btn" class="jarvis-btn" type="button">
+        <span class="button-indicator" aria-hidden="true"></span>
+        INITIALIZE JARVIS
+      </button>
+      <p class="sound-hint">VOICE AND AUDIO ENABLE AFTER INITIALIZATION</p>
+    </section>
+
+    <main id="portfolio-content" class="portfolio-content hidden" tabindex="-1">
+      <header class="site-header">
+        <a class="logo" href="#home" aria-label="Misho Kikvadze, home">
+          <span class="logo-mark" aria-hidden="true">M</span>
+          <span>J.A.R.V.I.S. <span class="logo-divider">//</span> MISHO KIKVADZE</span>
+        </a>
+        <nav class="site-nav" aria-label="Main navigation">
+          <a href="#about">ABOUT</a>
+          <a href="#projects">PROJECTS</a>
+          <a href="#skills">SKILLS</a>
+          <a href="#contact">CONTACT</a>
+        </nav>
+        <p class="system-status">
+          <span class="status-dot" aria-hidden="true"></span>
+          STATUS: <span class="online-text">ONLINE</span>
+        </p>
+      </header>
+
+      <div class="portfolio-scroll">
+        <section id="home" class="hero-section" aria-labelledby="jarvis-greeting">
+          <div class="hero-copy">
+            <p class="eyebrow hero-eyebrow">CREATIVE SYSTEMS // FRONT-END</p>
+            <h1 id="jarvis-greeting" class="typing-effect" aria-live="polite"></h1>
+            <p class="sub-text">Front-End Developer <span>&</span> UI/UX Craftsman</p>
+            <p id="system-message" class="system-message" role="status" aria-live="polite">
+              SYSTEM STATUS: AWAITING INITIALIZATION
+            </p>
+            <a class="text-link" href="#projects">
+              EXPLORE PORTFOLIO <span aria-hidden="true">↘</span>
+            </a>
+          </div>
+          <div class="hero-orbit" aria-hidden="true">
+            <span class="orbit orbit--one"></span>
+            <span class="orbit orbit--two"></span>
+            <span class="orbit-core">MK</span>
+            <span class="orbit-label orbit-label--top">DESIGN // 01</span>
+            <span class="orbit-label orbit-label--bottom">SYSTEMS ONLINE</span>
+          </div>
+          <p class="hero-index">01 <span>/</span> 04</p>
+        </section>
+
+        <section id="about" class="content-section" aria-labelledby="about-title">
+          <div class="section-heading reveal">
+            <p class="eyebrow">01 // PROFILE</p>
+            <h2 id="about-title">About <span>Me</span></h2>
+          </div>
+          <div class="about-panel glass-panel reveal">
+            <div class="panel-index" aria-hidden="true">MK<span>.</span></div>
+            <div>
+              <p class="panel-kicker">HUMAN CREATIVITY. PRECISE ENGINEERING.</p>
+              <p class="about-copy">
+                I’m Misho, a front-end developer and UI/UX craftsman focused on
+                building clear, considered digital experiences. I bring design
+                and code together to make interfaces feel as good as they work.
+              </p>
+            </div>
+            <div class="about-coordinate">TBS<br />41.7151° N</div>
+          </div>
+        </section>
+
+        <section id="projects" class="content-section" aria-labelledby="projects-title">
+          <div class="section-heading reveal">
+            <p class="eyebrow">02 // SELECTED WORK</p>
+            <h2 id="projects-title">Projects <span>Grid</span></h2>
+          </div>
+          <div class="projects-grid">
+            <article class="project-card glass-panel reveal">
+              <div class="project-visual project-visual--one" aria-hidden="true">
+                <span class="visual-window"><i></i><i></i><i></i><b>OVERVIEW</b></span>
+                <span class="visual-chart"></span>
+              </div>
+              <div class="project-meta"><span>01 / INTERFACE</span><span>UI DESIGN</span></div>
+              <h3>Digital Dashboard</h3>
+              <p>A clear, data-led interface concept built around focus and flow.</p>
+            </article>
+            <article class="project-card glass-panel reveal">
+              <div class="project-visual project-visual--two" aria-hidden="true">
+                <span class="visual-product"></span>
+                <span class="visual-caption">LESS, BUT<br />BETTER.</span>
+              </div>
+              <div class="project-meta"><span>02 / COMMERCE</span><span>WEB EXPERIENCE</span></div>
+              <h3>Modern Storefront</h3>
+              <p>A refined shopping experience with a simple, intuitive journey.</p>
+            </article>
+            <article class="project-card glass-panel reveal">
+              <div class="project-visual project-visual--three" aria-hidden="true">
+                <span class="visual-monogram">M<span>.</span></span>
+                <span class="visual-caption">DIGITAL<br />IDENTITY</span>
+              </div>
+              <div class="project-meta"><span>03 / IDENTITY</span><span>BRANDING</span></div>
+              <h3>Personal Brand</h3>
+              <p>A flexible visual system for a distinct digital presence.</p>
+            </article>
+          </div>
+        </section>
+
+        <section id="skills" class="content-section" aria-labelledby="skills-title">
+          <div class="section-heading reveal">
+            <p class="eyebrow">03 // CAPABILITIES</p>
+            <h2 id="skills-title">Skills <span>Matrix</span></h2>
+          </div>
+          <div class="skills-grid">
+            <article class="skill-card glass-panel reveal">
+              <span class="skill-number">01</span>
+              <h3>Front-End</h3>
+              <p>HTML5 · CSS3 · JavaScript</p>
+              <div class="skill-track" aria-label="Front-end development"><span style="--skill-level: 88%"></span></div>
+            </article>
+            <article class="skill-card glass-panel reveal">
+              <span class="skill-number">02</span>
+              <h3>Interface Design</h3>
+              <p>UI systems · Responsive design</p>
+              <div class="skill-track" aria-label="Interface design"><span style="--skill-level: 82%"></span></div>
+            </article>
+            <article class="skill-card glass-panel reveal">
+              <span class="skill-number">03</span>
+              <h3>Experience</h3>
+              <p>Prototyping · Interaction design</p>
+              <div class="skill-track" aria-label="Experience design"><span style="--skill-level: 78%"></span></div>
+            </article>
+          </div>
+        </section>
+
+        <section id="contact" class="content-section contact-section" aria-labelledby="contact-title">
+          <div class="contact-panel glass-panel reveal">
+            <div>
+              <p class="eyebrow">04 // OPEN CHANNEL</p>
+              <h2 id="contact-title">Have a good idea?<br /><span>Let’s build it.</span></h2>
+              <p class="contact-copy">Open to thoughtful collaborations and interesting challenges.</p>
+            </div>
+            <a
+              class="jarvis-btn contact-link"
+              href="mailto:your-email@example.com?subject=Project%20inquiry"
+            >
+              START A CONVERSATION <span aria-hidden="true">↗</span>
+            </a>
+            <span class="contact-orbit" aria-hidden="true"></span>
+          </div>
+        </section>
+
+        <footer class="site-footer">
+          <span>© <span id="current-year"></span> MISHO KIKVADZE</span>
+          <span>BUILT WITH INTENTION <span class="footer-signal">●</span></span>
+        </footer>
+      </div>
+
+    </main>
+  </body>
+</html>
